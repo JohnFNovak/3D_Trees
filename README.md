@@ -1,22 +1,35 @@
 #HANDY
 
-## An python implementation of The Human and Nature Dynamics (HANDY) Model
+## Growing trees with OpenGL
 
 ###John Novak
 
 john (period) franc (period) novak (at) gmail (dot) com <br />
 
 ####What it is:<br />
-  This is a python implementaion of the HANDY model: Human and Nature Dynamics. The model is described in the publication "Human and Nature Dynamics (HANDY): Modeling Inequality and Use of Resources in the Collapse or Sustainability of Societies" by Safa Motesharrei, Jorge Rivas, and Eugenia Kalnay a draft of which can be found at: http://www.atmos.umd.edu/~ekalnay/pubs/2014-03-18-handy1-paper-draft-safa-motesharrei-rivas-kalnay.pdf . I make no claim to the intelectual content of the model, or that this is an accurate representation of it the original authors intent. I knocked this together over Saturday morning coffee because I thought it was interesting.
+    This is an algorithmic tree growth program written in C++ and rendered with OpenGL. Trees are treated as a collection of branches. When the tree "buds" new branches are initialized at the ends of the previous generation of branches. Branches are initialized in pairs, with a fixed angle between them. When the tree "grows", all branches expand in length and radius.
 
 
-####requires:<br />
-python<br />
-matplotlib (optional) <br />
+####Requires:<br />
+    g++
+    OpenGL
+
+####Note on OS:<br />
+    This has been written and tested on OS X, using OpenGL and GLUT. It should be easy to get this to work on other systems, I just haven't tried yet.
+
 
 ####To use:<br />
-  python Run_HANDY.py \<parameter text file\>
+    $ make
+    $ ./branch
 
 
-####Parameter files
-  I have included a few parameter files corresponding to some of the specific cases described in the paper. The default parameter file is for the first case presented in the paper for an egalitarian society where the nature deletion factor is optimal.
+####Key bindings:<br />
+    ESC - quit
+    Space - play/pause
+    . - bud. Init new branches
+    x,X - pan camera in phi
+    c,C - pan camera in theta
+    z,Z - zoom in/out
+    a,A,s,S,d,D - move location of camera focus
+    , - turn on/off point of camera focus
+    [,] - increase/decrease autozoom (camera will zoom out (or in) when growth is not paused)
