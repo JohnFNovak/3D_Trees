@@ -14,22 +14,22 @@ john (period) franc (period) novak (at) gmail (dot) com <br />
 
 
 ####Requires:<br />
-  g++
-    OpenGL
+  g++<br />
+  OpenGL
 
 
 ####To use:<br />
-  $ make
-    $ ./branch
+  $ make<br />
+  $ ./branch
 
 
 ####Key bindings:<br />
-  ESC - quit
-  Space - play/pause
-  . - bud. Init new branches
-  x,X - pan camera in phi
-  c,C - pan camera in theta
-  z,Z - zoom in/out
-  a,A,s,S,d,D - move location of camera focus
-  , - turn on/off point of camera focus
+  ESC - quit<br />
+  Space - play/pause<br />
+  . - bud. Init new branches<br />
+  x,X - pan camera in phi<br />
+  c,C - pan camera in theta<br />
+  z,Z - zoom in/out<br />
+  a,A,s,S,d,D - move location of camera focus<br />
+  , - turn on/off point of camera focus<br />
   [,] - increase/decrease autozoom (camera will zoom out (or in) when growth is not paused)
