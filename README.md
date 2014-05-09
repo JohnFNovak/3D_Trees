@@ -1,4 +1,4 @@
-#HANDY
+#3D\_Trees
 
 ## Growing trees with OpenGL
 
